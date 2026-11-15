@@ -41,7 +41,7 @@ async function loadCourses() {
       <td><span class="status status-${c.status.toLowerCase().replace(' ', '-')}">${escapeHtml(c.status)}</span></td>
       <td>
         <button class="btn btn-success btn-sm" onclick="editCourse(${c.id})">Edit</button>
-        <button class="btn btn-danger btn-sm" onclick="deleteCourse(${c.id})">Delete</button>
+        <button class="btn btn-danger btn-sm" onclick="handleDelete(${c.id})">Remove</button>
       </td>
     </tr>`).join('');
 }
@@ -65,7 +65,7 @@ async function editCourse(id) {
   form.scrollIntoView({ behavior: 'smooth' });
 }
 
-async function deleteCourse(id) {
+async function handleDelete(id) {
   if (!confirm('Are you sure you want to delete this course?')) return;
   const res = await fetch(`${API}/${id}`, { method: 'DELETE' });
   if (res.ok) {

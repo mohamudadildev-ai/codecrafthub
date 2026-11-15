@@ -49,27 +49,21 @@ input, textarea, select {
 }
 
 .btn-primary {
-  background-color: #4b2fd6;
+  background-color: #8B5CF6;
   color: #ffffff;
-  border: 1px solid #4b2fd6;
-  font-weight: bold;
-  transition: background-color 0.2s ease;
+  border: 1px solid #8B5CF6;
 }
 .btn-primary:hover {
-  background-color: #3a22b0;
-  border-color: #3a22b0;
+  background-color: #7C3AED;
 }
 
 .btn-success {
-  background-color: #28a745;
+  background-color: #F59E0B;
   color: #ffffff;
-  border: 1px solid #28a745;
-  font-weight: bold;
-  transition: background-color 0.2s ease;
+  border: 1px solid #F59E0B;
 }
 .btn-success:hover {
-  background-color: #1e7e34;
-  border-color: #1e7e34;
+  background-color: #D97706;
 }
 
 .btn-danger {
