@@ -1,0 +1,104 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+header {
+  background: #4b2fd6;
+  color: #fff;
+  padding: 24px 16px;
+  text-align: center;
+}
+header h1 { margin: 0 0 4px; }
+header p { margin: 0; opacity: 0.9; }
+
+main { max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+label { display: block; margin-bottom: 12px; font-weight: bold; }
+input, textarea, select {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.actions { display: flex; gap: 8px; }
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #4b2fd6;
+  color: #ffffff;
+  border: 1px solid #4b2fd6;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+.btn-primary:hover {
+  background-color: #3a22b0;
+  border-color: #3a22b0;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #ffffff;
+  border: 1px solid #28a745;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+.btn-success:hover {
+  background-color: #1e7e34;
+  border-color: #1e7e34;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: 1px solid #dc3545;
+}
+.btn-danger:hover { background-color: #b02a37; }
+
+.btn-secondary { background-color: #6c757d; }
+
+.btn-sm { padding: 4px 10px; font-size: 13px; margin-right: 4px; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+th { background: #f0f0f7; }
+
+.status { padding: 2px 8px; border-radius: 10px; font-size: 12px; white-space: nowrap; }
+.status-not-started { background: #eee; }
+.status-in-progress { background: #fff3cd; }
+.status-completed { background: #d4edda; }
+
+#message { min-height: 1em; margin: 8px 0 0; }
+#message.error { color: #dc3545; }
+#message.ok { color: #28a745; }
+#stats { font-size: 14px; font-weight: normal; color: #666; }
+
+@media (max-width: 700px) {
+  table, thead, tbody, tr, th, td { display: block; }
+  thead { display: none; }
+  tr { border-bottom: 2px solid #ddd; padding: 8px 0; }
+  td { border: none; padding: 4px 0; }
+}

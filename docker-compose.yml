@@ -1,0 +1,12 @@
+services:
+  codecrafthub:
+    build: .
+    container_name: codecrafthub
+    ports:
+      - "5000:5000"
+    volumes:
+      - course-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  course-data:

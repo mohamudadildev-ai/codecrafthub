@@ -1,0 +1,17 @@
+{
+  "name": "codecrafthub",
+  "version": "1.0.0",
+  "description": "CodeCraftHub - a personalized learning platform for tracking courses (Node.js + Express REST API with a web UI).",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeCraftHub - Personalized Learning Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>CodeCraftHub</h1>
+    <p>Track your learning journey, one course at a time.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2 id="form-title">Add a Course</h2>
+      <form id="course-form">
+        <input type="hidden" id="course-id" />
+        <label>Course name
+          <input type="text" id="name" required />
+        </label>
+        <label>Description
+          <textarea id="description" rows="3" required></textarea>
+        </label>
+        <label>Target date
+          <input type="date" id="target_date" required />
+        </label>
+        <label>Status
+          <select id="status" required>
+            <option>Not Started</option>
+            <option>In Progress</option>
+            <option>Completed</option>
+          </select>
+        </label>
+        <div class="actions">
+          <button type="submit" class="btn btn-primary" id="submit-btn">Add Course</button>
+          <button type="button" class="btn btn-secondary" id="cancel-btn" hidden>Cancel</button>
+        </div>
+        <p id="message" role="status"></p>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>My Courses <span id="stats"></span></h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th><th>Description</th><th>Target date</th><th>Status</th><th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="course-list"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
